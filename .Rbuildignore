@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^renv$
+^renv\.lock$
+^PLOS_ONE_Manuscript\.md$
+^README\.md$
+^\.gitignore$
+^\.github$

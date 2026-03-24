@@ -1,0 +1,15 @@
+citHeader("To cite metaoverfit in publications, use:")
+
+bibentry(
+  bibtype  = "Article",
+  title    = "metaoverfit: An R Package for Detecting and Correcting Overfitting in Meta-Regression",
+  author   = person("Mahmood", "Ahmad"),
+  journal  = "PLOS ONE",
+  year     = "2026",
+  note     = "Forthcoming",
+  textVersion = paste(
+    "Ahmad M (2026).",
+    "metaoverfit: An R Package for Detecting and Correcting Overfitting in Meta-Regression.",
+    "PLOS ONE (forthcoming)."
+  )
+)
