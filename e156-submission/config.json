@@ -1,0 +1,57 @@
+{
+  "title": "Overfitting in Published Meta-Regressions: Simulation and Empirical Survey",
+  "slug": "metaoverfit-paper",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "path": "C:\\Projects\\metaoverfit-paper",
+  "type": "methods",
+  "primary_estimand": "R-squared optimism",
+  "summary": "Simulation and empirical survey show 81% of published meta-regressions have unreliable R-squared.",
+  "body": "How frequently do published meta-regressions operate in statistical regimes where apparent explanatory power is substantially inflated by overfitting? We combined simulation experiments across 18 parameter configurations with an empirical survey of 16 published meta-regressions from the metadat package spanning medicine, education, and psychiatry. The metaoverfit R package computed LOOCV-corrected R-squared alongside bootstrap confidence intervals for each benchmark, testing whether reported explanatory power survives internal validation. Mean optimism was 0.31, 95% CI 0.13-0.49, for two predictors and exceeded 0.30 for five predictors, with severe distortion when the studies-to-predictors ratio fell below ten. Among the 16 published analyses surveyed, 6 had extreme risk and 7 had severe overfitting risk, meaning 81 percent operated in unreliable regimes. Case studies on teacher expectancy, BCG vaccine, and herbal antidepressant datasets showed overfitting audits substantively changed interpretation of meta-regression slopes. A limitation is that the survey of 16 meta-regressions may not fully represent the broader published methodological literature.",
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "How frequently do published meta-regressions operate in statistical regimes where apparent explanatory power is substantially inflated by overfitting?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We combined simulation experiments across 18 parameter configurations with an empirical survey of 16 published meta-regressions from the metadat package spanning medicine, education, and psychiatry."
+    },
+    {
+      "role": "Method",
+      "text": "The metaoverfit R package computed LOOCV-corrected R-squared alongside bootstrap confidence intervals for each benchmark, testing whether reported explanatory power survives internal validation."
+    },
+    {
+      "role": "Primary result",
+      "text": "Mean optimism was 0.31, 95% CI 0.13-0.49, for two predictors and exceeded 0.30 for five predictors, with severe distortion when the studies-to-predictors ratio fell below ten."
+    },
+    {
+      "role": "Robustness",
+      "text": "Among the 16 published analyses surveyed, 6 had extreme risk and 7 had severe overfitting risk, meaning 81 percent operated in unreliable regimes."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Case studies on teacher expectancy, BCG vaccine, and herbal antidepressant datasets showed overfitting audits substantively changed interpretation of meta-regression slopes."
+    },
+    {
+      "role": "Boundary",
+      "text": "A limitation is that the survey of 16 meta-regressions may not fully represent the broader published methodological literature."
+    }
+  ],
+  "notes": {
+    "app": "metaoverfit R package v0.2.0",
+    "data": "18 simulation configs, 16 published meta-regressions",
+    "code": "https://github.com/mahmood726-cyber/metaoverfit-paper",
+    "doi": "",
+    "version": "0.2.0",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "affiliation": "Tahir Heart Institute",
+  "email": "mahmood.ahmad2@nhs.net",
+  "references": [
+    "Viechtbauer W. Conducting meta-analyses in R with the metafor package. J Stat Softw. 2010;36(3):1-48.",
+    "Schwarzer G, Carpenter JR, Rucker G. Meta-Analysis with R. Springer; 2015.",
+    "Borenstein M, Hedges LV, Higgins JPT, Rothstein HR. Introduction to Meta-Analysis. 2nd ed. Wiley; 2021."
+  ]
+}

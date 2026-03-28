@@ -1,0 +1,96 @@
+{
+  "title": "Overfitting in Published Meta-Regressions: Simulation and Empirical Survey",
+  "slug": "metaoverfit-paper",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "body": "How frequently do published meta-regressions operate in statistical regimes where apparent explanatory power is substantially inflated by overfitting? We combined simulation experiments across 18 parameter configurations with an empirical survey of 16 published meta-regressions from the metadat package spanning medicine, education, and psychiatry. The metaoverfit R package computed LOOCV-corrected R-squared alongside bootstrap confidence intervals for each benchmark, testing whether reported explanatory power survives internal validation. Mean optimism was 0.31, 95% CI 0.13-0.49, for two predictors and exceeded 0.30 for five predictors, with severe distortion when the studies-to-predictors ratio fell below ten. Among the 16 published analyses surveyed, 6 had extreme risk and 7 had severe overfitting risk, meaning 81 percent operated in unreliable regimes. Case studies on teacher expectancy, BCG vaccine, and herbal antidepressant datasets showed overfitting audits substantively changed interpretation of meta-regression slopes. A limitation is that the survey of 16 meta-regressions may not fully represent the broader published methodological literature.",
+  "word_count": 152,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "How frequently do published meta-regressions operate in statistical regimes where apparent explanatory power is substantially inflated by overfitting?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We combined simulation experiments across 18 parameter configurations with an empirical survey of 16 published meta-regressions from the metadat package spanning medicine, education, and psychiatry."
+    },
+    {
+      "role": "Method",
+      "text": "The metaoverfit R package computed LOOCV-corrected R-squared alongside bootstrap confidence intervals for each benchmark, testing whether reported explanatory power survives internal validation."
+    },
+    {
+      "role": "Primary result",
+      "text": "Mean optimism was 0.31, 95% CI 0.13-0.49, for two predictors and exceeded 0.30 for five predictors, with severe distortion when the studies-to-predictors ratio fell below ten."
+    },
+    {
+      "role": "Robustness",
+      "text": "Among the 16 published analyses surveyed, 6 had extreme risk and 7 had severe overfitting risk, meaning 81 percent operated in unreliable regimes."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Case studies on teacher expectancy, BCG vaccine, and herbal antidepressant datasets showed overfitting audits substantively changed interpretation of meta-regression slopes."
+    },
+    {
+      "role": "Boundary",
+      "text": "A limitation is that the survey of 16 meta-regressions may not fully represent the broader published methodological literature."
+    }
+  ],
+  "notes": {
+    "app": "metaoverfit R package v0.2.0",
+    "data": "18 simulation configs, 16 published meta-regressions",
+    "code": "https://github.com/mahmood726-cyber/metaoverfit-paper",
+    "doi": "",
+    "version": "0.2.0",
+    "date": "2026-03-26",
+    "validation": "DRAFT"
+  },
+  "type": "methods",
+  "primary_estimand": "R-squared optimism",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": false,
+        "detail": "Found 152 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a confidence interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": false,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": true,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
