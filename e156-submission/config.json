@@ -3,7 +3,7 @@
   "slug": "metaoverfit-paper",
   "author": "Mahmood Ahmad",
   "date": "2026-03-26",
-  "path": "/mnt/c/Projects/metaoverfit-paper",
+  "path": "C:\\Projects\\metaoverfit-paper",
   "type": "methods",
   "primary_estimand": "R-squared optimism",
   "summary": "Simulation and empirical survey show 81% of published meta-regressions have unreliable R-squared.",
