@@ -1,6 +1,6 @@
 # metaoverfit
 
-**metaoverfit** detects and corrects overfitting in meta-regression. When the number of studies (*k*) is small relative to the number of moderators (*p*), apparent R-squared heterogeneity values can be spuriously inflated. This package implements leave-one-out cross-validation (LOOCV) and non-parametric bootstrap procedures to quantify and correct this optimism.
+**metaoverfit** is a research-stage R package for exploring potential overfitting in meta-regression. Its proposed correction requires independent validation. When the number of studies (*k*) is small relative to the number of moderators (*p*), apparent R-squared heterogeneity values can be spuriously inflated. This package implements leave-one-out cross-validation (LOOCV) and non-parametric bootstrap procedures to quantify and correct this optimism.
 
 ## Installation
 
@@ -8,12 +8,12 @@ Install the development version from GitHub:
 
 ```r
 # install.packages("remotes")
-remotes::install_github("mahmood726-cyber/metaoverfit")
+remotes::install_github("mahmood726-cyber/metaoverfit-paper")
 ```
 
 ## Features
 
-- **Apparent and LOOCV-corrected R2het** -- `r2het_cv()` computes a cross-validated estimate that shrinks the apparent R2het toward its predictive value.
+- **Apparent and internally validated R2het** -- `r2het_cv()` reports exploratory apparent and leave-one-out summaries. A bounded result is not equivalent to independently established predictive skill.
 - **Bootstrap confidence intervals** -- `r2het_boot()` generates percentile CIs and diagnoses boundary effects (tau-squared = 0 hits).
 - **One-line overfitting audit** -- `check_overfitting()` wraps CV + bootstrap into a single call with a formatted print method.
 - **Sample size guidance** -- `sample_size_recommendation()` implements the "rule of 10" heuristic (*k/p >= 10*).
@@ -42,20 +42,13 @@ plot_overfitting(res, type = "bar")
 plot_overfitting(res, type = "histogram")
 ```
 
-## Example Output
+## Example output and reproducibility
 
-```
-Meta-Regression Overfitting Audit
-==================================
-Studies (k): 13 | Moderators (p): 1 | k/p ratio: 13.0
-Apparent R2_het:    0.646
-LOOCV R2_het:       0.437
-Estimated optimism: 0.209
-95% Bootstrap CI:  [0.042, 1.000]  (B = 1000)
-Boundary hits:      28 / 1000 (2.8%)
-
-** WARNING: k/p ratio < 10. Model stability is questionable.
-```
+The numerical output depends on input data and exact dependency versions.
+Do **not** treat any illustrative result as a reproduced empirical benchmark.
+The paper's claimed simulation and external-data results require independent
+rerunning and data-provenance review before publication. See
+[Publication validation gates](PUBLICATION_VALIDATION.md).
 
 ## Dependencies
 
@@ -65,9 +58,7 @@ Boundary hits:      28 / 1000 (2.8%)
 
 ## Citation
 
-If you use **metaoverfit** in a publication, please cite:
-
-> Ahmad M (2026). metaoverfit: An R Package for Detecting and Correcting Overfitting in Meta-Regression. *PLOS ONE* (forthcoming).
+The methods manuscript in this repository is a **draft**. No verified journal acceptance or DOI is provided here. Until one is established, cite the software repository and commit/release version, not an unverified journal publication.
 
 ## License
 
@@ -75,4 +66,6 @@ GPL-3
 
 ## Bug Reports and Contributions
 
-Please submit issues or pull requests on [GitHub](https://github.com/mahmood726-cyber/metaoverfit/issues).
+Please submit issues or pull requests on [GitHub](https://github.com/mahmood726-cyber/metaoverfit-paper/issues).
+
+**Release hold:** not independently validated for paper submission; see [PUBLICATION_VALIDATION.md](PUBLICATION_VALIDATION.md).
