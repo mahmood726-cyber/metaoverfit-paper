@@ -1,15 +1,16 @@
-citHeader("To cite metaoverfit in publications, use:")
+citHeader("To cite the unpublished metaoverfit research software, use:")
 
 bibentry(
-  bibtype  = "Article",
-  title    = "metaoverfit: An R Package for Detecting and Correcting Overfitting in Meta-Regression",
-  author   = person("Mahmood", "Ahmad"),
-  journal  = "PLOS ONE",
-  year     = "2026",
-  note     = "Forthcoming",
+  bibtype = "Manual",
+  title = "metaoverfit: exploratory R software for meta-regression overfitting",
+  author = person("Mahmood", "Ahmad"),
+  year = "2026",
+  url = "https://github.com/mahmood726-cyber/metaoverfit-paper",
+  note = "Unpublished research software; cite the archived version/commit when available",
   textVersion = paste(
     "Ahmad M (2026).",
-    "metaoverfit: An R Package for Detecting and Correcting Overfitting in Meta-Regression.",
-    "PLOS ONE (forthcoming)."
+    "metaoverfit: exploratory R software for meta-regression overfitting.",
+    "Unpublished research software,",
+    "https://github.com/mahmood726-cyber/metaoverfit-paper."
   )
 )
