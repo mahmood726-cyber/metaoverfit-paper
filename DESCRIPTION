@@ -27,6 +27,6 @@ Suggests:
 Config/testthat/edition: 3
 VignetteBuilder: 
     knitr
-URL: https://github.com/mahmood726-cyber/metaoverfit
-BugReports: https://github.com/mahmood726-cyber/metaoverfit/issues
+URL: https://github.com/mahmood726-cyber/metaoverfit-paper
+BugReports: https://github.com/mahmood726-cyber/metaoverfit-paper/issues
 RoxygenNote: 7.3.3
